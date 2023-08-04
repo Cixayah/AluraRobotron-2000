@@ -2,7 +2,7 @@ const subtrair = document.querySelector("#subtrair")
 const somar = document.querySelector("#somar")
 const braco = document.querySelector("#braco")
 
-const controle = document.querySelectorAll("controle-ajuste")
+const controle = document.querySelectorAll(".controle-ajuste")
 console.log(controle)
 subtrair.addEventListener("click", () => {
     { manipulaDados("subtrair") }
