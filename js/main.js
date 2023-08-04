@@ -1,6 +1,6 @@
 const robotron = document.querySelector("#robotron")
 
-robotron.addEventListener("click", function () {
+robotron.addEventListener("click", () => {
     console.log("Cliquei no robô");
 
 });
