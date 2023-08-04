@@ -3,7 +3,12 @@ const somar = document.querySelector("#somar")
 const braco = document.querySelector("#braco")
 
 const controle = document.querySelectorAll(".controle-ajuste")
-console.log(controle)
+
+controle.forEach((elemento) => {
+    elemento.addEventListener("click", () => {
+        console.log("funcionou")
+    })   
+})
 subtrair.addEventListener("click", () => {
     { manipulaDados("subtrair") }
     braco.value = parseInt(braco.value);
