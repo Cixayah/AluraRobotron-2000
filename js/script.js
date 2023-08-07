@@ -50,9 +50,15 @@ function manipulaDados(operacao, controle) {
         peca.value = parseInt(peca.value) + 1
     }
 }
-function atualizaEstatisticas(peca) {
-    estatisticas.forEach((elemento) => {
+function atualizaEstatisticas(peca, operacao) {
+    if (operacao === "+") {
+        estatisticas.forEach((elemento) => {
+            elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
 
-        elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
-    })
+        })
+    } else {
+        estatisticas.forEach((elemento) => {
+            elemento.textContent = parseInt(elemento.textContent) - pecas[peca][elemento.dataset.estatistica]
+        })
+    }
 }
