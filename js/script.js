@@ -1,4 +1,5 @@
 const controle = document.querySelectorAll("[data-controle]")
+const estatisticas = document.querySelectorAll("[data-estatistica]")
 const pecas = {
     "bracos": {
         "forca": 29,
@@ -51,4 +52,5 @@ function manipulaDados(operacao, controle) {
 }
 function atualizaEstatisticas(peca) {
     console.log(pecas[peca])
-}
+  
+    }
